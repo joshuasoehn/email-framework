@@ -47,7 +47,7 @@ h1,.h1{
   font-size: 34px;
   font-weight: bold;
   line-height: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -115,7 +115,7 @@ p {
 
 .preheaderContent .logo {
   height: auto;
-  width: auto;
+  width: 60px;
 }
 
 .bodyContent {
@@ -205,22 +205,6 @@ p {
   }
   .bodyContent {
     padding: 40px 40px 0!important;
-  }
-  #templateAddress {
-    padding: 10px!important;
-  }
-  #templateContainer {
-    border: 1px solid #eee !important;
-    border-radius: 2px !important;
-  }
-  .bodyContent div {
-    font-size: 18px !important;
-  }
-  #templateFullWidthImage img {
-    margin-top: 40px !important;
-  }
-  #templateFooter {
-    margin-top: 40px !important;
   }
   .button a{
     margin-top: 40px;

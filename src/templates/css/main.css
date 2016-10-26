@@ -6,6 +6,12 @@ body {
   padding: 0;
 }
 
+.body-wrap {
+  background-color: #f6f6f6;
+  margin: 0;
+  width: 100%;
+}
+
 table,
 td,
 tr {
@@ -30,8 +36,8 @@ img {
 .wrapper {
   margin: 0 auto;
   padding: 15px;
+  max-width: 600px !important;
   width: 100%;
-  max-width: 600px;
 }
 
 .templateContainer {
@@ -170,9 +176,9 @@ p {
 
 .social a {
   color: #348eda;
-  font-size: 16px;
   text-decoration: none;
-  line-height: 1.5;
+  line-height: 1.5
+  font-size: 14px;
 }
 
 .templateAddress {
@@ -185,16 +191,19 @@ p {
 
 .templateAddress a {
   color: #999;
+  font-size: 12px;
   text-decoration: underline;
 }
 
 .utility {
   color: #999;
+  font-size: 12px;
   text-align: center;
   padding: 20px 0;
 }
 
 .utility a {
   color: #999;
+  font-size: 12px;
   text-decoration: none;
 }

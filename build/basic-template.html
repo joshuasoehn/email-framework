@@ -6,6 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Email Title</title>
+
+  <style>
+@media screen and (min-width: 600px) {
+  .preheaderContent {
+    padding: 40px 0 30px !important;
+  }
+  .bodyContent {
+    padding: 40px 40px 0 !important;
+  }
+  .button a {
+    margin-top: 40px;
+    font-size: 16px !important;
+    padding: 20px 40px !important;
+  }
+}
+</style>
 </head>
 
 <body style="-webkit-text-size-adjust: none; background-color: #f6f6f6; font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0;">
@@ -14,21 +30,22 @@
       <td style="border-spacing: 0; padding: 0;">
 
         <table class="templatePreheader" style="border-spacing: 0; padding: 0; width: 100%;">
+  <tr style="border-spacing: 0; padding: 0;">
+    <td valign="center" class="preheaderContent" style="border-spacing: 0; padding: 30px 0px;">
+        <table style="border-spacing: 0; padding: 0; width: 100%;">
           <tr style="border-spacing: 0; padding: 0;">
-            <td valign="center" class="preheaderContent" style="border-spacing: 0; padding: 30px 0px;">
-                <table style="border-spacing: 0; padding: 0; width: 100%;">
-                  <tr style="border-spacing: 0; padding: 0;">
-                    <td style="border-spacing: 0; padding: 0;">
-                      <img class="logo" src="http://blog.mailchimp.com/wp-content/themes/mc-blog-theme/assets/images/freddie.svg" style="border: none; display: block; height: auto; max-width: 600px; outline: none; width: 60px;">
-                    </td>
-                    <td class="preheaderClaim" style="border-spacing: 0; color: #666; font-size: 14px; padding: 0; text-align: right;">
-                      <div mc:edit="std_preheader_links">Your brand claim</div>
-                    </td>
-                </tr>
-              </table>
+            <td style="border-spacing: 0; padding: 0;">
+              <img class="logo" src="http://blog.mailchimp.com/wp-content/themes/mc-blog-theme/assets/images/freddie.svg" style="border: none; display: block; height: auto; max-width: 600px; outline: none; width: 60px;">
             </td>
-          </tr>
-        </table>
+            <td class="preheaderClaim" style="border-spacing: 0; color: #666; font-size: 14px; padding: 0; text-align: right;">
+              <div mc:edit="std_preheader_links">Your brand claim</div>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 
         <table class="templateContainer" style="background: #fff; border: 1px solid #eee; border-radius: 4px; border-spacing: 0; overflow: hidden; padding: 0; width: 100%;">
 
@@ -62,49 +79,50 @@
           </tr>
 
           <tr style="border-spacing: 0; padding: 0;">
-            <td style="border-spacing: 0; padding: 0;">
-              <table class="templateFooter" style="border-spacing: 0; margin-top: 20px; padding: 0; width: 100%;">
-                <tr style="border-spacing: 0; padding: 0;">
-                  <td class="footerContent" style="border-spacing: 0; color: #707070; font-size: 12px; line-height: 125%; padding: 0;">
-                    <table style="border-spacing: 0; padding: 0; width: 100%;">
-                      <tr style="border-spacing: 0; padding: 0;">
-                        <td class="social" style="border-bottom: 1px solid #eee; border-spacing: 0; border-top: 1px solid #eee; font-size: 14px; padding: 25px 0; text-align: center;">
-                          <div mc:edit="std_social">
-                            <a href="#" style="color: #348eda; font-size: 16px; line-height: 1.5; text-decoration: none;">Twitter</a> ·
-                            <a href="#" style="color: #348eda; font-size: 16px; line-height: 1.5; text-decoration: none;">Facebook</a>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                    <table style="border-spacing: 0; padding: 0; width: 100%;">
-                      <tr style="border-spacing: 0; padding: 0;">
-                        <td class="utility" style="border-spacing: 0; color: #999; padding: 20px 0; text-align: center;">
-                          <div mc:edit="std_utility">
-                            &nbsp;<a href="#" style="color: #999; text-decoration: none;">Unsubscribe</a> — <a href="*|ARCHIVE|*" style="color: #999; text-decoration: none;">View in Browser</a>&nbsp;
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+  <td style="border-spacing: 0; padding: 0;">
+    <table class="templateFooter" style="border-spacing: 0; margin-top: 20px; padding: 0; width: 100%;">
+      <tr style="border-spacing: 0; padding: 0;">
+        <td class="footerContent" style="border-spacing: 0; color: #707070; font-size: 12px; line-height: 125%; padding: 0;">
+          <table style="border-spacing: 0; padding: 0; width: 100%;">
+            <tr style="border-spacing: 0; padding: 0;">
+              <td class="social" style="border-bottom: 1px solid #eee; border-spacing: 0; border-top: 1px solid #eee; font-size: 14px; padding: 25px 0; text-align: center;">
+                <div mc:edit="std_social">
+                  <a href="#" style="color: #348eda; font-size: 16px; line-height: 1.5; text-decoration: none;">Twitter</a> ·
+                  <a href="#" style="color: #348eda; font-size: 16px; line-height: 1.5; text-decoration: none;">Facebook</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table style="border-spacing: 0; padding: 0; width: 100%;">
+            <tr style="border-spacing: 0; padding: 0;">
+              <td class="utility" style="border-spacing: 0; color: #999; padding: 20px 0; text-align: center;">
+                <div mc:edit="std_utility">
+                  &nbsp;<a href="#" style="color: #999; text-decoration: none;">Unsubscribe</a> — <a href="*|ARCHIVE|*" style="color: #999; text-decoration: none;">View in Browser</a>&nbsp;
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
 
-        </table>
+</table>
 
-        <table class="templateAddress" style="border-spacing: 0; color: #999; font-size: 12px; line-height: 125%; padding: 20px; text-align: center; width: 100%;">
-          <tr style="border-spacing: 0; padding: 0;">
-            <td style="border-spacing: 0; padding: 0;">
-              <br>
-              <div mc:edit="std_footer">
-                This email template was prepared for you by your friends at <a href="https://kontist.com/" style="color: #999; text-decoration: underline;">Kontist</a>.<br>
-                Logo and image from <a href="http://mailchimp.com/" style="color: #999; text-decoration: underline;">Mailchimp</a>.
-              </div>
-              <br>
-            </td>
-          </tr>
-        </table>
+<table class="templateAddress" style="border-spacing: 0; color: #999; font-size: 12px; line-height: 125%; padding: 20px; text-align: center; width: 100%;">
+<tr style="border-spacing: 0; padding: 0;">
+  <td style="border-spacing: 0; padding: 0;">
+    <br>
+    <div mc:edit="std_footer">
+      This email template was prepared for you by your friends at <a href="https://kontist.com/" style="color: #999; text-decoration: underline;">Kontist</a>.<br>
+      Logo and image from <a href="http://mailchimp.com/" style="color: #999; text-decoration: underline;">Mailchimp</a>.
+    </div>
+    <br>
+  </td>
+</tr>
+</table>
+
 
       </td>
     </tr>

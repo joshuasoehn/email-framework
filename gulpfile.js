@@ -2,12 +2,13 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 var inlineCss = require('gulp-inline-css');
+var fileinclude = require('gulp-file-include');
 
 // Static server
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./src/templates/",
+      baseDir: "./build/",
       index: "basic-template.html"
     }
   });
@@ -16,7 +17,13 @@ gulp.task('browser-sync', function() {
 // Build Templates
 gulp.task('build', function() {
   return gulp.src('./src/templates/*.html')
-    .pipe(inlineCss())
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+      }))
+    .pipe(inlineCss({
+      preserveMediaQueries: true
+    }))
     .pipe(gulp.dest('./build/'));
 });
 

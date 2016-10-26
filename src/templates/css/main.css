@@ -198,17 +198,3 @@ p {
   color: #999;
   text-decoration: none;
 }
-
-@media screen and (min-width: 600px) {
-  .preheaderContent {
-    padding: 40px 0 30px !important;
-  }
-  .bodyContent {
-    padding: 40px 40px 0!important;
-  }
-  .button a{
-    margin-top: 40px;
-    font-size: 16px !important;
-    padding: 20px 40px !important;
-  }
-}

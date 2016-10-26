@@ -185,7 +185,7 @@ p {
 
 .templateAddress a {
   color: #999;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .utility {

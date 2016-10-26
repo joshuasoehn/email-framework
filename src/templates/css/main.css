@@ -1,9 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f6f6f6;
   -webkit-text-size-adjust: none;
-  margin: 0;
-  padding: 0;
 }
 
 .body-wrap {

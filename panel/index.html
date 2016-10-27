@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/panel.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>Email Testing Panel</title>
+</head>
+<body>
+  <div class="wrapper">
+    <aside>
+      <h3>Choose a template</h3>
+      <div class="template-list">
+        <ul>
+          <li><a class="active" href="/build/basic-template.html">Basic Template</a></li>
+          <li><a href="/build/kontist-basic-template.html">Kontist Basic Template</a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="send-button">
+
+    </div>
+    <div class="email-previews">
+      <div class="preview preview-desktop">
+        <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src="/build/basic-template.html"></iframe>
+      </div>
+      <div class="preview preview-mobile">
+        <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src="/build/basic-template.html"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

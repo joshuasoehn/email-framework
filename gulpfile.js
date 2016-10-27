@@ -12,8 +12,7 @@ var config = require('./config.json');
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./build/",
-      index: "basic-template.html"
+      baseDir: "./"
     }
   });
 });
@@ -33,8 +32,10 @@ gulp.task('build', function() {
 
 // Watch Files For Changes And Reload
 gulp.task('watch', function() {
-  gulp.watch('./src/templates/*.html', ['build', reload]);
-  gulp.watch('./src/templates/css/*.css', ['build', reload]);
+  gulp.watch('./src/*/*.html', ['build', reload]);
+  gulp.watch('./src/*/css/*.css', ['build', reload]);
+  gulp.watch('./*/*.html', ['build', reload]);
+  gulp.watch('./*/css/*.css', ['build', reload]);
 });
 
 // Add ability to send test emails

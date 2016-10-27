@@ -1,1 +1,17 @@
-soon
+{
+  "testing": {
+    "from": "from-email",
+    "to": "recepit-email",
+    "subject": "your-subject-line"
+  },
+
+  "auth": {
+    "mailgun": {
+      "apikey": "your-api-key",
+      "sandbox": "your-sandbox-url"
+    },
+    "mandril": {
+      "apikey": "your-api-key"
+    }
+  }
+}

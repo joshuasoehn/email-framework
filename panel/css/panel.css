@@ -45,11 +45,12 @@ aside {
   padding: 40px;
   width: 15%;
   box-shadow: 0 0 2px rgba(0,0,0,.4);
+  overflow-y: scroll;
 }
 
 .wrapper {
   display: flex;
-  min-height: 100%;
+  height: 100vh;
 }
 
 .email-previews {
@@ -66,6 +67,9 @@ iframe {
 }
 
 .send-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   background: #0097A7;
@@ -76,6 +80,10 @@ iframe {
   cursor: pointer;
   transition: all .3s ease;
   box-shadow: 0 0 3px rgba(0,0,0,0.12),0 3px 3px rgba(0,0,0,0.24),0 0 6px rgba(0,0,0,0.12),0 6px 6px rgba(0,0,0,0.24)
+}
+
+.send-button svg {
+  fill: #fff;
 }
 
 .send-button:hover {

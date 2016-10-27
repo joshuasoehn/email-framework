@@ -34,8 +34,8 @@ gulp.task('build', function() {
 gulp.task('watch', function() {
   gulp.watch('./src/*/*.html', ['build', reload]);
   gulp.watch('./src/*/css/*.css', ['build', reload]);
-  gulp.watch('./*/*.html', ['build', reload]);
-  gulp.watch('./*/css/*.css', ['build', reload]);
+  gulp.watch('./*/*.html', [reload]);
+  gulp.watch('./*/css/*.css', [reload]);
 });
 
 // Add ability to send test emails

@@ -10,7 +10,6 @@
   <title>Email Testing Panel</title>
 </head>
 <body>
-  <div class="wrapper">
     <aside>
       <h3>Choose a template</h3>
       <div class="template-list">
@@ -20,18 +19,20 @@
         </ul>
       </div>
     </aside>
-    <div class="send-button">
-      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-        <path d="M0 0h24v24H0z" fill="none"/>
-      </svg>
-    </div>
-    <div class="email-previews">
-      <div class="preview preview-desktop">
-        <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src=""></iframe>
+    <div class="wrapper">
+      <div class="send-button">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
       </div>
-      <div class="preview preview-mobile">
-        <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src=""></iframe>
+      <div class="email-previews">
+        <div class="preview preview-desktop">
+          <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src=""></iframe>
+        </div>
+        <div class="preview preview-mobile">
+          <iframe id="frame-content" sandbox="allow-scripts allow-same-origin" src=""></iframe>
+        </div>
       </div>
     </div>
   </div>

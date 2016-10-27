@@ -45,7 +45,7 @@ gulp.task('send', function () {
     key: config.auth.mailgun.apikey,
     sender: config.testing.from,
     recipient: config.testing.to,
-    subject: 'This is a test email'
+    subject: config.testing.subject
   }));
 });
 

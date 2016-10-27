@@ -1,10 +1,10 @@
 var activeTemplate;
-var apikey;
+var config;
 
 $(function() {
 
   $.getJSON( "/config.json", function( data ) {
-    apikey = data.auth.mailgun.apikey;
+    config = data;
   });
 
   activeTemplate = window.location.hash.split('#')[1];
@@ -23,22 +23,34 @@ $(function() {
   });
 
   $('.send-button').click(function(){
-    $.ajax('https://api.mailgun.net/v3/YOUR_SANDBOX.mailgun.org/messages',
-    	{
-    		type:"POST",
-    		username: 'api',
-    		password: 'key-3b94bb4a3f59ae44c7ce8aecc9f5f15f',
-    		data:{
-    			"html": activeTemplate,
-    			"subject": "This is a test email",
-    			"from": "hello@kontist.com",
-    			"to": "joshua.soehn@kontist.com"
-    		},
-    		success:function(a,b,c){
-    			console.log( 'mail sent: ', b );
-    		}.bind(this),
-    		error:function( xhr, status, errText ){console.log( 'mail sent failed: ', xhr.responseText );}
-    	})
+    $.ajax({
+      type: 'GET',
+      url: activeTemplate
+    }).done(function(templateContent) {
+      console.log(templateContent);
+      $.ajax({
+        type: 'POST',
+        url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+        data: {
+          'key': config.auth.mandril.apikey,
+          'message': {
+            'from_email': config.testing.from,
+            'to': [
+                {
+                  'email': config.testing.to,
+                  'type': 'to'
+                }
+              ],
+            'autotext': 'true',
+            'subject': config.testing.subject,
+            'html': templateContent
+          }
+        }
+       }).done(function(response) {
+         console.log(response); // if you're into that sorta thing
+       });
+    });
+
   });
 
 });

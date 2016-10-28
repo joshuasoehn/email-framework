@@ -32,7 +32,7 @@ We are using gulp-file-include for includes, giving you the option to pass down 
   "socials": {
     "fb": "facebook.com/include",
     "tw": "twitter.com/include"
-}
+})
 ```
 
 ### Sending test emails via Mailgun and Mandrill

@@ -15,13 +15,13 @@ npm install
 ## Features
 
 ### A basic starter template
-This framework comes with a ready to use sample start template, which can be modified how you like it. All the assets are &copy Mailchimp
+This framework comes with a ready to use sample start template, which can be modified how you like it. All the used example assets are © Mailchimp.
 
 ### Automatic CSS Inline and build system
-No SCSS, it bites you in the ass when doing responsive emails, trust me
+The build systems inlines all the css autmaticly, but keeps your media queries in the head tag, so the build email is ready to be used in any service.
 
-### No more reloading thanks to browser-sync
-Browser sync is keeping all the adjustments you make to the E-mail templates in sync and previews changes live, without manually reloading
+### No more reloading thanks to browser sync
+Browser sync is keeping all the adjustments you make to the email templates in sync and previews changes live, without manually reloading.
 
 ### Smart partials
 We are using gulp-file-include for includes, giving you the option to pass down props to partials like so
@@ -36,13 +36,13 @@ We are using gulp-file-include for includes, giving you the option to pass down 
 ```
 
 ### Sending test emails via Mailgun and Mandrill
-Use mail gun to send preview emails to yourself using `gulp send` (please adjust the setting in the gulp file to the template you want to send. Or if you have an Mandrill you can send the email you are previewing right from the interface.
+Use mail gun to send preview emails to yourself using `gulp send` (please adjust the setting in the gulp file to the template you want to send). Or if you have an Mandrill you can send the email you are previewing right from the UI.
 
-### A split screen UI for designing your email
-Preview and manage all your templates right from the UI, browser-sync will keep all the inframes in sync for you
+### A simple UI for designing your emails
+Preview and manage all your templates right from the UI and preview your email at two devices sizes at the same time, browser sync will keep all the iFrames in sync for you.
 
 ## How to use
-Rename the `config-sample.json` file to `config.json`. Add you api keys for mailgun and mandrill if you want to use either of the service for sending test emails to yourself. Setting up an mailgun account for that is free, but it doesn't support sending emails from the UI.
+Rename the `config-sample.json` file to `config.json`. Add you api keys for mailgun and mandrill, if you want to use either of the service for sending test emails to yourself. Setting up an mailgun account for that is free, but it doesn't support sending emails from the UI.
 
 ```
 {
@@ -84,4 +84,5 @@ or create your own from scratch. As long as the gulp task is running it will aut
 ```
 in `panel/index.html`.
 
-Thanks a lot [Filip](https://github.com/peritus) for helping my with lots of the JS part 😍
+Pull request and feedback welcome, as this is a very first version.
+Thanks a lot [Filip](https://github.com/peritus) for helping my with lots of the JS part.

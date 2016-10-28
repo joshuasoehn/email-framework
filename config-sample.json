@@ -10,7 +10,7 @@
       "apikey": "your-api-key",
       "sandbox": "your-sandbox-url"
     },
-    "mandril": {
+    "mandrill": {
       "apikey": "your-api-key"
     }
   }

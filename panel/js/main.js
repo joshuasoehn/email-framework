@@ -32,7 +32,7 @@ $(function() {
         type: 'POST',
         url: 'https://mandrillapp.com/api/1.0/messages/send.json',
         data: {
-          'key': config.auth.mandril.apikey,
+          'key': config.auth.mandrill.apikey,
           'message': {
             'from_email': config.testing.from,
             'to': [

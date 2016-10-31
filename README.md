@@ -36,7 +36,7 @@ We are using gulp-file-include for includes, giving you the option to pass down 
 ```
 
 ### Sending test emails via Mailgun and Mandrill
-Use mail gun to send preview emails to yourself using `gulp send` (please adjust the setting in the gulp file to the template you want to send). Or if you have an Mandrill you can send the email you are previewing right from the UI.
+Use Mailgun to send preview emails to yourself using `gulp send` (please adjust the setting in the gulp file to the template you want to send). Or if you have an Mandrill you can send the email you are previewing right from the UI.
 
 ### A simple UI for designing your emails
 Preview and manage all your templates right from the UI and preview your email at two devices sizes at the same time, browser sync will keep all the iFrames in sync for you.

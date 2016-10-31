@@ -15,7 +15,7 @@ npm install
 ## Features
 
 ### A basic starter template
-This framework comes with a ready to use sample start template, which can be modified how you like it. All the used example assets are © Mailchimp.
+This framework comes with a ready to use sample start template, which can be modified how you like it. All the used example assets are ©Mailchimp.
 
 ### Automatic CSS Inline and build system
 The build systems inlines all the css autmaticly, but keeps your media queries in the head tag, so the build email is ready to be used in any service.

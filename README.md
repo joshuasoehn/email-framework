@@ -1,6 +1,6 @@
 # Gulp Email Framework
 
-A simple, gulp powered framework to develop and test reponsive emails. Inspired by [Gulp Email Creator](https://github.com/darylldoyle/Gulp-Email-Creator) and the [Grunt Email Workflow](https://github.com/leemunroe/grunt-email-workflow).
+A simple, gulp powered framework to develop and test responsive emails. Inspired by [Gulp Email Creator](https://github.com/darylldoyle/Gulp-Email-Creator) and the [Grunt Email Workflow](https://github.com/leemunroe/grunt-email-workflow).
 
 ![email template screenshot](https://cloud.githubusercontent.com/assets/4403029/19772299/0ea6066e-9c66-11e6-97f3-c413eadbefa6.png)
 

@@ -10,14 +10,13 @@
   <title>Email Testing Panel</title>
 </head>
 <body>
-    <aside>
+    <aside>  
       <h3>Choose a template</h3>
       <div class="template-list">
         <ul>
-          <li><a href="/build/basic-template.html">Basic Template</a></li>
-          <li><a href="/">Password Reset</a></li>
-          <li><a href="/">Welcome Template</a></li>
-          <li><a href="/">Delete Account Confirmation</a></li>
+        <% _.each(templates, function(template){ %>
+          <li><a href="<%= template.path %>"><%= template.name %></a></li>
+        <% }); %>
         </ul>
       </div>
     </aside>

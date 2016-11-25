@@ -18,10 +18,13 @@
   "homepage": "https://github.com/joshuasoehn/email-framework#readme",
   "devDependencies": {
     "browser-sync": "^2.17.5",
+    "glob": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-file-include": "^1.0.0",
+    "gulp-filenames": "^4.0.1",
     "gulp-inline-css": "^3.1.0",
     "gulp-mailgun": "0.0.7",
+    "gulp-template": "^4.0.0",
     "gulp-util": "^3.0.7"
   }
 }
